@@ -22,3 +22,14 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+## Images
+
+![Picture of the waveform that I get when I run my test cases.](waveform.png)
+
+![Picture of the entity and architecture sketch for the system I'm implementing.](topbasys3_entity_sketch.png)
+
+## Documentation
+
+Lt Col Wyche helped me determine how to draw the entity sketch and helped me fix a bug I encountered (I needed to uncomment
+all the LEDs within the xdc file because even the unused LEDs were programmed to ground). 
